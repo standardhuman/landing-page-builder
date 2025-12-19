@@ -43,7 +43,7 @@ git clone https://github.com/YOUR_USERNAME/landing-page-builder.git
 | **2. Brainstorm Copy** | Make messaging decisions using research findings | 15-20 min |
 | **3. Inspiration** | Collect branding JSON + screenshot from example site | 5-10 min |
 | **4. Build** | Combine all inputs to generate HTML/CSS/JS | 10-20 min |
-| **5. Iterate** | Refine in Cursor with element selection | 15-30 min |
+| **5. Iterate** | Refine through conversation in Claude Code | 15-30 min |
 | **6. Deploy** | Push live with Netlify or Vercel CLI | 5-10 min |
 
 **Total**: ~1.5-2.5 hours for a complete, research-backed landing page.
@@ -68,7 +68,7 @@ The skill will guide you through each step.
 
 ```
 landing-page-builder/
-├── SKILL.md                 # Main skill file (6-step workflow)
+├── SKILL.md                 # Main skill file (7-step workflow)
 ├── README.md                # This file
 └── references/
     ├── deep-research-protocol.md  # Research methodology
@@ -79,9 +79,9 @@ landing-page-builder/
 ## Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed
-- [Cursor](https://cursor.com) (for Step 5 - $20/mo recommended)
-- Netlify or Vercel account (for Step 6 - free tier works)
+- Netlify or Vercel account (for deployment - free tier works)
 - Optional: [Firecrawl](https://firecrawl.dev) account (for Step 3 - free tier)
+- Optional: [Cursor](https://cursor.com) (alternative editor for Step 5)
 
 ## Deep Research for Other Topics
 

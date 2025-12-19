@@ -260,32 +260,36 @@ If you need clarification before starting, ask.
 
 ## Step 5: Iterate
 
-Refine in Cursor for focused edits.
+Refine the landing page through conversation.
 
-### Setup
+### Primary: Stay in Claude Code
 
-1. Download the HTML from chat
-2. Create a folder on your desktop (e.g., `landing-page/`)
-3. Add the HTML file to the folder
-4. Open the folder in Cursor
-
-### Key Feature: Element Selection
-
-1. Click the mouse icon with box ("Select element")
-2. Hover over the preview - blue boxes highlight sections
-3. Click to select a section
-4. Describe your change
-5. AI edits only that section (not the whole page)
-
-### Workflow
+Just describe what you want to change:
 
 ```
-Select element → Describe change → Accept → Repeat
+"Make the headline bigger"
+"Change the CTA button to green"
+"Add more whitespace between sections"
+"The testimonial section feels cramped - can you fix that?"
 ```
 
-After 2-3 edits, start a fresh chat (click + button).
+Claude Code edits the HTML file directly. Preview in your browser to see changes.
 
-See [tools.md](references/tools.md#cursor) for detailed workflow.
+### Tips for Good Iterations
+
+- **Be specific**: "Make the hero section taller" vs. "make it look better"
+- **One change at a time**: Easier to review and undo if needed
+- **Reference sections**: "In the pricing section..." or "The footer CTA..."
+- **Save versions**: Copy the HTML before major changes
+
+### Optional: Use Cursor
+
+If you prefer a visual editor with element selection:
+
+1. Download the HTML file
+2. Open in [Cursor](https://cursor.com)
+3. Use element selection (mouse icon) to target specific sections
+4. See [tools.md](references/tools.md#cursor) for detailed workflow
 
 ---
 
@@ -300,7 +304,7 @@ Deploy via Netlify or Vercel CLI.
 
 ### Deploy Commands
 
-In Cursor, start a new chat:
+Ask Claude Code to deploy:
 
 **Netlify:**
 ```
@@ -353,5 +357,4 @@ See [tools.md](references/tools.md#deployment) for subdomain setup help.
 3. **Ignoring research in copy** → Apply the tactics you found
 4. **Rushing copy decisions** → One question at a time, explore options
 5. **No inspiration** → Generic AI output
-6. **Too many chat iterations** → AI quality degrades; move to Cursor
-7. **Not using element selection** → Unfocused edits across whole page
+6. **Vague iteration requests** → Be specific: "make headline bigger" not "make it better"
