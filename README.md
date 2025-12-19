@@ -1,18 +1,16 @@
 # Landing Page Builder Skill
 
-A 6-step workflow for creating high-converting landing pages with AI. Includes integrated deep research for evidence-based best practices.
+A 7-step workflow for creating high-converting landing pages with AI. Includes brainstorming, deep research, and everything you need in one place.
 
 ## What's Different About This Skill?
 
-Most landing page tutorials use a single search query for research. This skill uses a **multi-source research protocol** that:
+This skill combines three powerful methodologies:
 
-- Searches 5 query variations in parallel
-- Triangulates findings across authoritative sources
-- Marks claims as [Verified] (2+ sources) or [Single source]
-- Notes contradictions instead of hiding them
-- Cites every tactic with URLs
+1. **Brainstorming** - Clarify what you're selling through guided dialogue (one question at a time)
+2. **Deep Research** - Multi-source research with 2-source verification
+3. **Research-Informed Copy** - Messaging decisions based on actual research findings
 
-The result: Research-backed landing pages, not AI-generated guesses.
+The result: Landing pages built on clear thinking and evidence, not AI guesses.
 
 ## Installation
 
@@ -32,22 +30,23 @@ git clone https://github.com/YOUR_USERNAME/landing-page-builder.git
 2. Extract to `~/.claude/skills/landing-page-builder/`
 3. Restart Claude Code
 
-## The 6-Step Workflow
+## The 7-Step Workflow
 
 ```
-1. DEEP RESEARCH → 2. COPY → 3. INSPIRATION → 4. BUILD → 5. ITERATE → 6. DEPLOY
+0. BRAINSTORM PRODUCT → 1. DEEP RESEARCH → 2. BRAINSTORM COPY → 3. INSPIRATION → 4. BUILD → 5. ITERATE → 6. DEPLOY
 ```
 
 | Step | What Happens | Time |
 |------|--------------|------|
+| **0. Brainstorm Product** | Clarify what you're selling (one question at a time) | 10-15 min |
 | **1. Deep Research** | Multi-source research on current best practices | 15-30 min |
-| **2. Copy** | Generate all landing page text from product brief | 15-30 min |
+| **2. Brainstorm Copy** | Make messaging decisions using research findings | 15-20 min |
 | **3. Inspiration** | Collect branding JSON + screenshot from example site | 5-10 min |
 | **4. Build** | Combine all inputs to generate HTML/CSS/JS | 10-20 min |
 | **5. Iterate** | Refine in Cursor with element selection | 15-30 min |
 | **6. Deploy** | Push live with Netlify or Vercel CLI | 5-10 min |
 
-**Total**: ~1.5-2 hours for a complete, research-backed landing page.
+**Total**: ~1.5-2.5 hours for a complete, research-backed landing page.
 
 ## Usage
 

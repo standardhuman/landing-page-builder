@@ -1,6 +1,81 @@
 # Prompt Templates
 
-## Deep Research Prompt
+## Step 0: Brainstorm Product/Offer
+
+Use these questions one at a time to clarify the product before research.
+
+### Opening
+
+```
+I'll help you build a landing page. First, let's get clear on what you're selling.
+
+What are you selling? Give me a quick description.
+```
+
+### Follow-up Questions (one at a time)
+
+```
+Who is this for?
+
+Let's get specific:
+- What's their job or situation?
+- Age range?
+- What are they struggling with right now?
+```
+
+```
+What problem does this solve?
+
+Dig into the pain:
+- What's frustrating them?
+- What have they tried that didn't work?
+- What would their life look like if this problem was solved?
+```
+
+```
+What makes this different from alternatives?
+
+Options to consider:
+1. It's faster than alternatives
+2. It's simpler/easier
+3. It gets better results
+4. It's more affordable
+5. Something else entirely
+
+Which resonates, or is it something different?
+```
+
+```
+What's included? What do they actually get?
+
+List out the deliverables, features, or components.
+```
+
+```
+Any pricing or positioning context I should know?
+
+- Price point (or range)?
+- Premium vs. accessible positioning?
+- Any competitors to be aware of?
+```
+
+### Confirmation
+
+```
+Let me make sure I've got this right:
+
+**What you're selling**: [summary]
+**Who it's for**: [summary]
+**Problem solved**: [summary]
+**What makes it different**: [summary]
+**What's included**: [summary]
+
+Did I capture that correctly, or should we adjust anything?
+```
+
+---
+
+## Step 1: Deep Research Prompt
 
 Use in Step 1 for comprehensive, multi-source research.
 
@@ -65,9 +140,103 @@ Save to: landing-page-conversion-playbook-[YEAR].md
 
 ---
 
-## Copywriting Prompt
+## Step 2: Brainstorm Messaging/Copy
 
-Use in Step 2 to generate landing page copy.
+Use after deep research to make messaging decisions informed by findings.
+
+### Phase 1: Review Research
+
+```
+Based on the research, here are the top insights for YOUR product:
+
+1. [Research finding] → Here's how we could apply it: [application]
+2. [Research finding] → Here's how we could apply it: [application]
+3. [Research finding] → Here's how we could apply it: [application]
+
+Let's use these to shape the messaging. First question...
+```
+
+### Phase 2: Messaging Decisions (one at a time)
+
+```
+Which pain point should we lead with?
+
+Based on your product brief, here are the angles:
+1. [Pain point A] - focuses on [aspect]
+2. [Pain point B] - focuses on [aspect]
+3. [Pain point C] - focuses on [aspect]
+
+I'd recommend #[X] because [reasoning]. What do you think?
+```
+
+```
+What's the headline approach?
+
+Options (applying [research tactic]):
+1. "[Headline option A]" - [why it works]
+2. "[Headline option B]" - [why it works]
+3. "[Headline option C]" - [why it works]
+
+I'd lean toward #[X]. Which resonates with you?
+```
+
+```
+What social proof do you have available?
+
+- Testimonials from customers?
+- Numbers (users, results, years)?
+- Logos (clients, media, partners)?
+- Reviews or ratings?
+
+Tell me what you've got and we'll figure out the best placement.
+```
+
+```
+What objections might visitors have?
+
+Based on your product, likely concerns:
+1. [Objection A]
+2. [Objection B]
+3. [Objection C]
+
+Any others? Let's discuss how to address each.
+```
+
+```
+What's the primary CTA?
+
+Options:
+1. "[Action verb] + [outcome]" (e.g., "Start Your Free Trial")
+2. "[Simple action]" (e.g., "Get Started")
+3. "[Urgency angle]" (e.g., "Claim Your Spot")
+
+The research suggests [tactic]. Which fits your product best?
+```
+
+### Phase 3: Generate Copy
+
+```
+Now I'll write the full landing page copy based on our decisions:
+
+- Pain point: [chosen]
+- Headline: [chosen]
+- Social proof: [what's available]
+- Objection handling: [approach]
+- CTA: [chosen]
+
+Applying these research-backed tactics:
+- [Tactic 1]
+- [Tactic 2]
+- [Tactic 3]
+
+Writing at a 5th grade reading level...
+
+[GENERATE FULL COPY]
+```
+
+### Legacy: Direct Copy Generation (Skip Brainstorming)
+
+If you need to skip brainstorming and go straight to copy:
 
 ```
 Create the copy for a landing page based on this product brief.
@@ -78,63 +247,9 @@ RULES:
 - Only write the TEXT - no code
 - Include all standard landing page sections
 
-SECTIONS TO INCLUDE:
-1. Headline (attention-grabbing, benefit-focused)
-2. Subheadline (clarifies the headline)
-3. Hero description (1-2 sentences)
-4. Problem statement (what pain you solve)
-5. Solution (how your product helps)
-6. Features/Benefits (3-5 key points)
-7. Social proof (testimonials, numbers, logos)
-8. Objection handling (address concerns)
-9. CTA (clear call to action)
-10. Footer CTA (final push)
-
 <product_brief>
-Product Name
-[Your product name]
-
-What It Is
-[Plain description of what you're selling]
-
-The Problem It Solves
-[What pain point does this address?]
-
-Who It's For
-[Target audience demographics and psychographics]
-
-What's Included
-[List of features/deliverables]
+[INSERT BRIEF]
 </product_brief>
-```
-
-### Example Brief (For Reference)
-
-```
-Product Name
-Decline All
-
-What It Is
-A weekend retreat where we take your phone and laptop. You don't get them
-back until Sunday. No calendar. No Slack. No Zoom. Just nature, good food,
-and quiet.
-
-The Problem It Solves
-Most people spend their week in back-to-back meetings. They're tired.
-They're burnt out. They never get real work done. They dream of a break
-but feel guilty taking one. Decline All gives them permission to disconnect.
-
-Who It's For
-Mid-level managers and team leads at tech companies. Usually 30-45 years old.
-They manage 5-15 people. Their calendars are full from 9am to 5pm most days.
-They make good money but have no time.
-
-What's Included
-- 2 nights at the Decline All retreat center
-- All meals (fancy but simple)
-- Guided walks and journaling sessions
-- A "meeting audit" workshop on Saturday
-- Your devices locked in a box until checkout
 ```
 
 ---

@@ -1,19 +1,71 @@
 ---
 name: landing-page-builder
-description: Build high-converting landing pages with AI using a 6-step workflow. Use when user wants to create a landing page, build a product page, make a marketing page, or convert visitors. Triggers on requests like "build me a landing page", "create a page for my product", "I need a landing page for...", or "help me build a marketing page". Covers deep research, copywriting, design inspiration, building, iteration, and deployment.
+description: Build high-converting landing pages with AI using a 7-step workflow. Use when user wants to create a landing page, build a product page, make a marketing page, or convert visitors. Triggers on requests like "build me a landing page", "create a page for my product", "I need a landing page for...", or "help me build a marketing page". Covers brainstorming, deep research, copywriting, design inspiration, building, iteration, and deployment.
 ---
 
 # Landing Page Builder
 
-A 6-step workflow for creating landing pages that convert.
+A 7-step workflow for creating landing pages that convert. Includes brainstorming, research, and everything you need in one place.
 
 ## The System
 
 ```
-1. DEEP RESEARCH → 2. COPY → 3. INSPIRATION → 4. BUILD → 5. ITERATE → 6. DEPLOY
+0. BRAINSTORM PRODUCT → 1. DEEP RESEARCH → 2. BRAINSTORM COPY → 3. INSPIRATION → 4. BUILD → 5. ITERATE → 6. DEPLOY
 ```
 
 Each step feeds the next. Don't skip steps.
+
+---
+
+## Step 0: Brainstorm Product/Offer
+
+Clarify what you're selling before researching how to sell it.
+
+**Process**: Ask questions one at a time, multiple choice when possible.
+
+### Questions to Explore
+
+1. **What are you selling?** (open-ended)
+2. **Who is this for?** → Get specific: age, job, situation, pain level
+3. **What problem does it solve?** → Dig into the actual pain
+4. **What makes this different?** → vs. alternatives or doing nothing
+5. **What's included?** → Deliverables, features, what they get
+6. **Pricing/positioning?** → Any constraints or context
+
+### Key Principles
+
+- **One question at a time** - Don't overwhelm
+- **Multiple choice preferred** - Easier to answer
+- **Dig deeper** - Follow up on interesting answers
+- **Confirm understanding** - Summarize back before moving on
+
+### Output
+
+Save as `[product-name]-product-brief.md`:
+
+```markdown
+# Product Brief: [Name]
+
+## What It Is
+[1-2 sentences - plain language]
+
+## The Problem
+[Pain point in customer's words]
+
+## Who It's For
+[Specific audience: demographics + psychographics]
+
+## What Makes It Different
+[Unique angle or differentiation]
+
+## What's Included
+- [Deliverable 1]
+- [Deliverable 2]
+- ...
+
+## Positioning Notes
+[Pricing context, constraints, market position]
+```
 
 ---
 
@@ -25,22 +77,19 @@ Research current landing page best practices using multi-source verification.
 
 ### Quick Start
 
-Run this research prompt:
-
 ```
 Research the best practices for creating highly converting landing pages
 as of today's date ([INSERT TODAY'S DATE]).
 
 Execute Type B Synthesis research:
-1. Search 5 query variations (see deep-research-protocol.md)
+1. Search 5 query variations
 2. Prioritize: Unbounce, ConversionXL, Nielsen Norman, HubSpot
 3. For each tactic, find 2+ sources to verify
 4. Note any contradictions between sources
 5. Only include actionable, current tactics (last 18 months)
 
-Output format: Use the Playbook template from deep-research-protocol.md
-Mark each claim as [Verified] or [Single source]
-Include full URLs for every citation
+Mark each claim as [Verified] or [Single source].
+Include full URLs for every citation.
 ```
 
 ### What Makes This Different
@@ -51,63 +100,100 @@ Include full URLs for every citation
 | Trust first result | Verify with 2+ sources |
 | No citations | Every claim has URL |
 | Generic advice | Current, dated tactics |
-| Hidden conflicts | Contradictions noted |
 
 See [deep-research-protocol.md](references/deep-research-protocol.md) for the full methodology.
 
 **Output**: Save as `landing-page-conversion-playbook-[YEAR].md`
 
-**Time**: 15-30 minutes (vs 5 min for shallow research)
+**Time**: 15-30 minutes
 
 ---
 
-## Step 2: Copy
+## Step 2: Brainstorm Messaging/Copy
 
-Generate all landing page text before touching code.
+Make messaging decisions informed by research findings.
 
-**Key**: Request 5th grade reading level for clarity. Copy before code.
+**Inputs Available**:
+- Product brief from Step 0
+- Research playbook from Step 1
 
-### Collect the Brief
+### Phase 1: Review Research
 
-Ask the user for their product details:
+Before asking questions, summarize the top 3-5 research insights relevant to THIS product:
 
+> "The research shows [tactic] increases conversions. Given your product, here's how we might apply that..."
+
+### Phase 2: Messaging Decisions (one at a time)
+
+1. **Which pain point should we lead with?**
+   - Present 2-3 angles based on the product brief
+   - Recommend one with reasoning
+
+2. **What's the headline approach?**
+   - Present 2-3 options
+   - Apply research-backed headline tactics
+
+3. **What social proof do you have?**
+   - Testimonials, numbers, logos, media mentions?
+   - Discuss placement based on research
+
+4. **What objections might visitors have?**
+   - Brainstorm 2-3 likely objections
+   - Discuss how to address each
+
+5. **What's the primary CTA?**
+   - Action word + urgency approach
+   - Apply research-backed CTA tactics
+
+### Phase 3: Generate Copy
+
+Using the decisions above:
+- Write the full landing page copy
+- Apply research-backed tactics (cite which ones)
+- Write at 5th grade reading level
+
+### Output
+
+Save as `[product-name]-landing-page-copy.md`:
+
+```markdown
+# Landing Page Copy: [Name]
+
+## Research Tactics Applied
+- [Tactic from playbook] → Applied in [section]
+- [Tactic] → Applied in [section]
+
+## Headline
+[The chosen headline]
+
+## Subheadline
+[Supporting statement]
+
+## Hero Section
+[1-2 sentences that hook and explain]
+
+## Problem
+[Agitate the pain point]
+
+## Solution
+[How the product helps]
+
+## Features/Benefits
+- [Feature] → [Benefit]
+- ...
+
+## Social Proof
+[Testimonials, numbers, logos]
+
+## Objection Handling
+[Address concerns]
+
+## CTA
+[Primary call to action]
+
+## Footer CTA
+[Final push]
 ```
-I need the following information about your product:
-
-1. **Product Name**: What's it called?
-
-2. **What It Is**: Plain description (1-2 sentences)
-
-3. **Problem It Solves**: What pain point does this address?
-
-4. **Who It's For**: Target audience (demographics + psychographics)
-
-5. **What's Included**: List of features/deliverables
-```
-
-### Generate Copy
-
-Once you have the brief:
-
-```
-Create the copy for a landing page based on this product brief.
-
-RULES:
-- Write at a 5th grade reading level
-- Use short sentences and simple words
-- Only write the TEXT - no code yet
-- Include all sections: headline, subhead, features, social proof, CTA
-
-<product_brief>
-[INSERT BRIEF HERE]
-</product_brief>
-```
-
-See [prompts.md](references/prompts.md#copywriting-prompt) for full prompt with example.
-
-**Output**: Save as `[product-name]-landing-page-copy.md`
-
-**Critical**: Review copy carefully before continuing. This is the foundation.
 
 ---
 
@@ -138,12 +224,13 @@ See [tools.md](references/tools.md#firecrawl) for detailed instructions.
 
 Combine all outputs to generate the landing page.
 
-### Attach These 4 Files
+### Attach These 5 Files
 
-1. Research playbook (Step 1)
-2. Copy document (Step 2)
-3. Branding JSON (Step 3)
-4. Screenshot (Step 3)
+1. Product brief (Step 0)
+2. Research playbook (Step 1)
+3. Copy document (Step 2)
+4. Branding JSON (Step 3)
+5. Screenshot (Step 3)
 
 ### Build Prompt
 
@@ -152,9 +239,10 @@ You're an expert developer. Create a beautiful, well-structured
 landing page for my product.
 
 I'm providing:
-1. Research on landing page best practices (attached)
-2. The copy for my site (attached)
-3. Design inspiration - branding JSON and screenshot (attached)
+1. Product brief (context about what we're selling)
+2. Research on landing page best practices
+3. The copy for my site (use ALL of this)
+4. Design inspiration - branding JSON and screenshot
 
 Create the site in HTML, CSS, and JavaScript.
 Include ALL the copy I've provided.
@@ -184,7 +272,7 @@ Refine in Cursor for focused edits.
 ### Key Feature: Element Selection
 
 1. Click the mouse icon with box ("Select element")
-2. Hover over the page - blue boxes highlight sections
+2. Hover over the preview - blue boxes highlight sections
 3. Click to select a section
 4. Describe your change
 5. AI edits only that section (not the whole page)
@@ -234,6 +322,7 @@ See [tools.md](references/tools.md#deployment) for subdomain setup help.
 
 | Type | Convention |
 |------|------------|
+| Product Brief | `[product-name]-product-brief.md` |
 | Research | `landing-page-conversion-playbook-[YEAR].md` |
 | Copy | `[product-name]-landing-page-copy.md` |
 | Branding | `www.[site].com.json` |
@@ -241,38 +330,28 @@ See [tools.md](references/tools.md#deployment) for subdomain setup help.
 
 ---
 
-## Common Mistakes
-
-1. **Shallow research** → Use the deep research protocol, not a single search
-2. **Rushing copy** → Weak foundation; spend time here
-3. **No inspiration** → Generic AI output
-4. **Too many chat iterations** → AI quality degrades; move to Cursor
-5. **Not using element selection** → Unfocused edits across whole page
-6. **Skipping date in research** → Outdated tactics
-
----
-
 ## Quick Reference
 
 | Step | Time | Output |
 |------|------|--------|
+| 0. Brainstorm Product | 10-15 min | `[product-name]-product-brief.md` |
 | 1. Deep Research | 15-30 min | `landing-page-conversion-playbook-[YEAR].md` |
-| 2. Copy | 15-30 min | `[product-name]-landing-page-copy.md` |
+| 2. Brainstorm Copy | 15-20 min | `[product-name]-landing-page-copy.md` |
 | 3. Inspiration | 5-10 min | JSON + Screenshot |
 | 4. Build | 10-20 min | Initial HTML |
 | 5. Iterate | 15-30 min | Refined HTML |
 | 6. Deploy | 5-10 min | Live URL |
 
-**Total**: ~1.5-2 hours for a complete, research-backed landing page.
+**Total**: ~1.5-2.5 hours for a complete, research-backed landing page.
 
 ---
 
-## Deep Research for Other Topics
+## Common Mistakes
 
-This skill uses a simplified version of the Deep Research system for Step 1.
-
-For comprehensive research on any topic (not just landing pages), see the full system:
-- [Claude Code Deep Research](https://github.com/anthropics/claude-code-deep-research)
-- 7-phase process with Graph of Thoughts
-- Multi-agent orchestration
-- Hypothesis testing and verification
+1. **Skipping brainstorming** → Unclear product = weak copy
+2. **Shallow research** → Use the deep research protocol, not a single search
+3. **Ignoring research in copy** → Apply the tactics you found
+4. **Rushing copy decisions** → One question at a time, explore options
+5. **No inspiration** → Generic AI output
+6. **Too many chat iterations** → AI quality degrades; move to Cursor
+7. **Not using element selection** → Unfocused edits across whole page
