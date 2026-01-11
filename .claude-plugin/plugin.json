@@ -1,0 +1,9 @@
+{
+  "name": "landing-page-builder",
+  "description": "Build high-converting landing pages with a 7-step AI workflow",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brian"
+  },
+  "license": "MIT"
+}
